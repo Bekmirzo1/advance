@@ -1420,6 +1420,12 @@ textarea.input {
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
 }
+.block-assort_man .block-assort__taste-item {
+  background-color: #ebf4ff;
+}
+.block-assort_man .block-assort__taste-item._active {
+  border-color: #2388ff;
+}
 .block-assort__body {
   padding: 60px;
 }
