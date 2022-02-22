@@ -1629,6 +1629,8 @@ textarea.input {
   align-items: center;
   justify-content: space-between;
   transition: all 0.3s ease 0s;
+  opacity: 0;
+  visibility: hidden;
   pointer-events: none;
 }
 @media (any-hover: hover) {
@@ -1766,6 +1768,10 @@ textarea.input {
   cursor: pointer;
   transition: all 0.3s ease 0s;
   pointer-events: all;
+}
+.slider-arrow.swiper-button-disabled {
+  opacity: 0;
+  visibility: hidden;
 }
 .slider-arrow img {
   width: 28px;
