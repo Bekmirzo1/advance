@@ -1303,7 +1303,7 @@ textarea.input {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  border-bottom: 1px solid #333333;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
 }
 @media (min-width: 479.98px) {
   .composition__header {
@@ -1597,15 +1597,21 @@ textarea.input {
   }
 }
 @media (min-width: 991.98px) {
-  .reviews__slider::before {
+  .reviews__slider::before, .reviews__slider::after {
     content: "";
     position: absolute;
     width: 160px;
     height: 100%;
     top: 0;
-    right: -140px;
     background: linear-gradient(270deg, #ffffff 86.88%, rgba(255, 255, 255, 0.72749) 93.12%, rgba(255, 255, 255, 0) 100%);
     z-index: 2;
+  }
+  .reviews__slider::before {
+    right: -140px;
+  }
+  .reviews__slider::after {
+    left: -140px;
+    transform: rotate(180deg);
   }
 }
 .reviews__slider-body {
@@ -1623,8 +1629,6 @@ textarea.input {
   align-items: center;
   justify-content: space-between;
   transition: all 0.3s ease 0s;
-  opacity: 0;
-  visibility: hidden;
   pointer-events: none;
 }
 @media (any-hover: hover) {
@@ -1762,10 +1766,6 @@ textarea.input {
   cursor: pointer;
   transition: all 0.3s ease 0s;
   pointer-events: all;
-}
-.slider-arrow.swiper-button-disabled {
-  opacity: 0;
-  visibility: hidden;
 }
 .slider-arrow img {
   width: 28px;
