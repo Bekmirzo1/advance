@@ -750,7 +750,7 @@ textarea.input {
 .popup {
   -webkit-overflow-scrolling: touch;
   z-index: 100;
-  padding: 30px 10px;
+  padding: 30px 16px;
   position: fixed;
   top: 0px;
   left: 0;
@@ -761,7 +761,7 @@ textarea.input {
 }
 .popup::before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.2);
   position: fixed;
   width: 100%;
   height: 100%;
@@ -802,20 +802,60 @@ textarea.input {
 .popup__body {
   transform: scale(0);
   transition: all 0.3s ease 0s;
-  background-color: #666;
-  padding: 50px;
+  background-color: #fff;
+  padding: 40px 16px;
   width: 100%;
-  max-width: 800px;
+  max-width: 560px;
+  border-radius: 12px;
 }
 .popup__close {
-  width: 18px;
-  height: 18px;
+  width: 19px;
+  height: 19px;
   position: absolute;
-  top: 3px;
-  right: 3px;
+  top: 14px;
+  right: 14px;
   cursor: pointer;
   z-index: 30;
-  background: url("../img/icons/close.svg") 0 0 no-repeat;
+  background: url(../img/icons/close.svg) 0 0 no-repeat;
+}
+
+.buy-popup .popup__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.buy-popup__title {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0px 0px 32px 0px;
+}
+.buy-popup__buttons {
+  width: 100%;
+  max-width: 440px;
+  display: grid;
+  gap: 12px;
+}
+.buy-popup__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 17px 10px;
+  min-width: 60px;
+  border-radius: 8px;
+}
+.buy-popup__button_wild {
+  background: #9f2697;
+}
+.buy-popup__button_ozon {
+  background: #265AF6;
+}
+.buy-popup__button_yandex {
+  border: 1px solid #D0D0D0;
+}
+.buy-popup__button img {
+  max-width: 100%;
 }
 
 .header {
@@ -1190,10 +1230,13 @@ textarea.input {
   max-width: 100%;
 }
 .fullscreen__images-body._anim-items {
-  transition-delay: 1.2s;
+  transition-delay: 1s;
   transform: translate(10%, 0);
 }
 
+.why__title._trs-delay {
+  transition-delay: 1.3s;
+}
 .columns-why {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

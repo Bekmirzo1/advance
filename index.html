@@ -13,11 +13,11 @@
     <div class="wrapper">
         <!-- *Header -->
         <header class="header">
-    <div class="header__wrapper">
+    <div class="header__wrapper _lp">
         <div class="header__container _container">
             <div class="header__body">
                 <div class="header__logo">
-                    <a href="" class="header__logo-body _logo">
+                    <a href="" class="header__logo-body _logo _scrolltop">
                         <img src="img/logo.svg" alt="">
                     </a>
                 </div>
@@ -68,7 +68,7 @@
                     Улучшает общее самочувствие и поднимает насроение
                 </div>
                 <div class="fullscreen__buttons _anim-items _anim-default">
-                    <a href="" class="fullscreen__button btn">Купить</a>
+                    <a href="#buy" class="fullscreen__button btn _popup-link">Купить</a>
                     <a href="" class="fullscreen__button btn btn_white">Узнать подробнее</a>
                 </div>
             </div>
@@ -607,7 +607,7 @@
         <footer class="footer">
     <div class="footer__container _container">
         <div class="footer__body">
-            <a href="" class="footer__logo _logo">
+            <a href="" class="footer__logo _logo _scrolltop">
                 <img src="img/logo-white.svg" alt="">
             </a>
             <div class="footer__footer">
@@ -621,10 +621,37 @@
         </div>
     </div>
 </footer>
+        <div class="popup popup_popup">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close"></div>
+		</div>
+	</div>
+</div>
+<div class="popup popup_buy buy-popup">
+	<div class="popup__content">
+		<div class="popup__body">
+			<h3 class="buy-popup__title">
+				Выберите магазин:
+			</h3>
+			<div class="buy-popup__buttons">
+				<a href="" class="buy-popup__button buy-popup__button_wild">
+					<img src="img/companies/wildberries.svg" alt="">
+				</a>
+				<a href="https://www.ozon.ru/products/498466888/?asb=jyVr831N8b%252BlCyWWTy0PlKYoZpAmWvpF3rmkRLIHzNiG9adiDBLTtWG24i0LcuPJ&asb2=x6KXo12g8aanX2Pdf91iYbR6XtlKbOKhZTMpS4D9dE3s7_xalIaHr8gal_hiXB_E6dbsbNUvb6tbvM1gu82P9p4418nV4bDsWs8FvDitn3QkFaAasfU7HCJOyUahu0KP5BFEupj2bs-RQBtCJn1JYg&keywords=adv+nutrition&sh=vz-pmQAAAA&from=share_android"
+					class="buy-popup__button buy-popup__button_ozon">
+					<img src="img/companies/ozon.svg" alt="">
+				</a>
+				<a href="" class="buy-popup__button buy-popup__button_yandex">
+					<img src="img/companies/yandex.svg" alt="">
+				</a>
+			</div>
+			<div class="popup__close"></div>
+		</div>
+	</div>
+</div>
     </div>
-    <!-- Swiper -->
-<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
-<script src="js/vendors.min.js"></script>
+    <script src="js/vendors.min.js"></script>
 <script src="js/app.min.js"></script>
 </body>
 
